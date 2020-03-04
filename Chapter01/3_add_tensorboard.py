@@ -1,4 +1,5 @@
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v1_behavior()
 
 x = tf.placeholder(tf.float32, name='x')
 y = tf.placeholder(tf.float32, name='y')
